@@ -1,0 +1,73 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #a6c1ea;
+}
+
+.container {
+  background: rgb(10, 109, 55);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* Style Kalkulator */
+.display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f01977;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #22c4d0;
+}
+
+button.operator {
+  background-color: #ffcd43;
+  color: white;
+}
+
+button.clear {
+  background-color: #f61d1d;
+  color: white;
+  grid-column: span 2;
+}
+
+.btn-nav {
+  margin-top: 20px;
+  background-color: #ec7118;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+}
